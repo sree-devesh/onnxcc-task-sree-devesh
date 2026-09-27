@@ -1,4 +1,4 @@
-configure_file(${CMAKE_SOURCE_DIR}/include/onnxcc/version.h.in onnxcc/version.h @ONLY)
+configure_file(onnxcc/version.h.in onnxcc/version.h @ONLY)
 
 add_library(onnxcc_lib STATIC
     onnxcc/version.cpp
@@ -20,7 +20,6 @@ target_include_directories(onnxcc_lib
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}
         ${CMAKE_CURRENT_BINARY_DIR}
-        ${CMAKE_SOURCE_DIR}/include
 )
 
 target_compile_options(onnxcc_lib PRIVATE ${ONNXCC_WARNINGS})

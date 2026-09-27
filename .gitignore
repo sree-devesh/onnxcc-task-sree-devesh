@@ -6,7 +6,6 @@
 
 # '!' line marks a folder as active
 !/src/
-!/include/
 !/README.md
 !/CMakeLists.txt
 !/tests/
